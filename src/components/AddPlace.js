@@ -24,7 +24,7 @@ const AddPlace = () => {
 
         try {
             await placeService.createPlace(placeData);
-            navigate("/view-places"); 
+            navigate(-1); 
         } catch (error) {
             console.error("Error adding place:", error);
             alert("Failed to add place");
@@ -56,30 +56,14 @@ const AddPlace = () => {
 
                 <div className="form-group">
                     <label>Image</label>
-                    <input
+                    <input 
                         type="file"
                         accept="image/*"
                         onChange={(e) => setImageUrl(e.target.files[0])}
                     />
                 </div>
 
-                <div className="form-group">
-                    <label>Pickup</label>
-                    <input
-                        type="checkbox"
-                        checked={isPickup}
-                        onChange={(e) => setIsPickup(e.target.checked)}
-                    />
-                </div>
-
-                <div className="form-group">
-                    <label>Drop</label>
-                    <input
-                        type="checkbox"
-                        checked={isDrop}
-                        onChange={(e) => setIsDrop(e.target.checked)}
-                    />
-                </div>
+               
 
                
 

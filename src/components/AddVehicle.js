@@ -25,7 +25,7 @@ const AddVehicle = () => {
         try {
             await vehicleService.createVehicle(vehicleData);
             alert("Vehicle added successfully!");
-            navigate("/view-vehicles"); 
+            navigate(-1); 
         } catch (error) {
             console.error("Error adding vehicle:", error);
             alert("Failed to add vehicle");

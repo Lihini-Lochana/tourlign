@@ -1,9 +1,10 @@
 .add-place-container {
-    width: 80%;
+    width: 50%;
     margin: 20px auto;
     background-color: #f4f4f9;
     padding: 20px;
     border-radius: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .add-place-form {
@@ -36,6 +37,8 @@ textarea {
 input[type="file"] {
     margin-top: 5px;
 }
+
+
 
 .submit-button-place {
     background-color: #8679ec;

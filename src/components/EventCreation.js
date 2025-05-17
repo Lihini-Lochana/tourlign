@@ -64,7 +64,7 @@ const EventCreation = () => {
   };
 
   return (
-    <div style={{ padding: "2rem" }}>
+    <div style={{ padding: "2rem", fontFamily: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"}}>
       <h2>Create New Event</h2>
       <form onSubmit={handleSubmit}>
         <div>
